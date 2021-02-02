@@ -1,0 +1,19 @@
+version: v1
+protocol: http
+mode: duration/thread
+spec:
+  replicas: 1
+  requests:
+  - name: request-name
+    transaction: tr
+    url: 127.0.0.1:9080
+    method: POST
+    headers: 
+    -
+    content-type: application/json
+    data: nil
+    allow-redirect: false
+    random-vars:
+    - name: 
+      type: 
+      length: 
